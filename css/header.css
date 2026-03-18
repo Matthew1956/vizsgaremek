@@ -63,6 +63,9 @@ nav img {
 .nav-links ul li a:hover {
   background: #0a07ad;/* kék háttér rámutatáskor */
 }
+#kilenc-dropdown{
+   width: 100%;
+}
 
 /* Dropdown */
 .dropdown-content {
