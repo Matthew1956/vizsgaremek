@@ -55,3 +55,112 @@
     transform: none !important; /*ne történjen vele semmi*/
   }
 }
+@media (max-width: 768px) {
+    .footer-content 
+    {
+        flex-direction: column;/* elemek egymás alá rendezése */
+        text-align: center;/* szöveg középre igazítása */
+        gap: 20px;/* elemek közötti távolság */
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Mobilon egy oszlopos rács */
+    }
+    .modal-content {
+        max-width: 95%; /*szélesebb kép*/
+    }
+}
+
+@media (max-width: 768px) {
+  nav {
+  flex-direction: column;/* oszlopos elrendezés */
+  padding: 10px;/* kisebb belső távolság */
+}
+
+  nav img {
+  width: 90px;/* kisebb logó */
+  margin-bottom: 10px;/* alsó távolság */
+}
+
+.nav-links {
+  display: none;/* menü elrejtése mobilvonal alatt */
+  width: 100%;/* teljes szélesség */
+}
+
+.nav-links.active {
+  display: flex;/* megnyitott állapot */
+  flex-direction: column;/* függőleges lista */
+  background: #050261;/* mobilmenü háttere */
+}
+
+.nav-links ul {
+  flex-direction: column;/* pontok egymás alatt */
+  width: 100%;/* teljes szélesség */
+  text-align: center;/* középre zárt szöveg */
+  padding: 10px 0;/* belső távolság */
+}
+
+.nav-links ul li {
+  margin: 5px 0;/* pontok közti margó */
+}
+
+.dropdown-content {
+  display: none;/* rejtett lenyíló */
+  position: static;/* tolja maga után a tartalmat */
+  background: #04091e;/* sötét háttér */
+  border: none;/* keret nélkül */
+  box-shadow: none;/* árnyék nélkül */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;/* rámutatásra lenyílik */
+}
+
+.dropdown.open .dropdown-content {
+  display: block !important;/* kényszerített megnyitás */
+}
+
+.hamburger {
+  display: flex;/* hamburger gomb megjelenítése */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box h1 { font-size: 30px; }/* még kisebb cím mobilra */
+  nav img { width: 75px; }/* még kisebb logó */
+}
+
+@media (max-width: 768px) {
+.footer-content 
+  {
+  flex-direction: column;/* egymás alá rendezés */
+  text-align: center;/* középre zárt szöveg */
+  gap: 20px;/* elemek közti távolság */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-box h1 { font-size: 38px; }/* tablet méretű főcím */
+  .text-box p { font-size: 16px; }/* tablet méretű szöveg */
+  .tobbgomb { padding: 10px 20px; font-size: 16px; }/* kisebb gomb */
+  .bevezetes-szoveg,
+  .osztalyok,
+  .kilenc,
+  .tiz,
+  .tizenegy,
+  .tizenkettő,
+  .tizenhárom { padding: 20px; margin: 10px; }/* kisebb belső távolság */
+  .bevezetes-szoveg p,
+  .osztalyok p,
+  .kilenc p,
+  .tiz p,
+  .tizenegy p{ font-size: 16px; }/* kisebb bekezdés méret */
+  .cim, .cim2, .cim3, .cim4,.cim9, .cim10, .cim11, .cim12, .cim13, .cim_ref{ font-size: 32px; }/* kisebb címek */
+}
+
+@media (max-width: 480px) {
+  .text-box h1 { font-size: 30px; }/* mobil főcím méret */
+  nav img { width: 75px; }/* kisebb logó mobilra */
+}
